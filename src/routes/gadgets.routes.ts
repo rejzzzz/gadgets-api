@@ -1,9 +1,9 @@
 import express from "express";
-import { getGadgets, addGadget, updateGadget, deleteGadget } from "../controllers/gadgets.controller";
+import { getGadgetsProb, addGadget, updateGadget, deleteGadget } from "../controllers/gadgets.controller";
 
 const router = express.Router();
 
-router.get("/", getGadgets);
+router.get("/", getGadgetsProb);
 
 router.post("/", addGadget);
 
